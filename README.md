@@ -2,7 +2,7 @@
 This is a course recap and a simple project simulation.
 
 ## Dependency
-- R version 4.1.2 
+- R version 4.1.2 --how to specify r version? .yml?
 - tidyverse 1.3.1
 - ggplot2 3.3.6
 - here 1.0.1
