@@ -57,3 +57,5 @@ rsconnect/
 *.pdf
 *.html
 *.csv
+results/*.png
+results/graph.png
