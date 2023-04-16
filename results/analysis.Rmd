@@ -1,0 +1,28 @@
+---
+title: "analysis"
+output:
+  bookdown::html_document2:
+    toc: true
+  bookdown::pdf_document2:
+    toc: true
+---
+# Invisible package loading
+```{r, message = FALSE}
+library(tidyverse)
+library(here)
+library(ggplot2)
+```
+this is my first comment which makes no sense.
+
+
+```{r loaddataframe, echo =FALSE, out.width="70%", fig.align="center", fig.cap = "Tidyed talbe"}
+family_bkstatus = read.csv(here('results/family_bkstatus.csv'))
+knitr::kable(head(family_bkstatus,3), caption = 'tabel')
+```
+the above table  \@ref(tab:loaddataframe)  shows the cleaned data frame
+
+```{r famgrph, echo = FALSE,fig.cap = "viz"}
+knitr::include_graphics(here("results/graph.png"))
+
+```
+the above table  \@ref(fig:famgrph)  shows the cleaned data frame
